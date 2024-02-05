@@ -1,0 +1,18 @@
+.custom_breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pageName {
+  padding-right: 10px;
+  border-right: 1px solid grey;
+}
+
+.breadcrumb_options i{
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  padding: 8px;
+  color: #fff;
+}

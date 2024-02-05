@@ -1,0 +1,43 @@
+.translucent_block {
+  height: 20px;
+  z-index: 999;
+  background-color: #f7f7f7;
+  opacity: 0.9;
+  position: fixed;
+  width: calc(100vw - var(--sidebar-width) - 60px);
+  left: calc(var(--sidebar-width) + 30px);
+}
+.topbar {
+  z-index: 999;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px !important;
+  position: fixed;
+  width: calc(100vw - var(--sidebar-width) - 60px);
+  left: calc(var(--sidebar-width) + 30px);
+  top: 20px;
+}
+
+.topbar-item {
+  margin: 0px 10px;
+  font-size: 20px;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.user-placeholder {
+  height: 24px;
+  width: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center; 
+}

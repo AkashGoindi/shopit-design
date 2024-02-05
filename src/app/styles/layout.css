@@ -1,0 +1,79 @@
+:root {
+  --sidebar-width: 260px;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+}
+
+.layout-sidebar {
+  height: 100vh;
+  width: var(--sidebar-width);
+  position: fixed;
+  overflow: scroll;
+  padding: 0 1rem;
+
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+}
+
+.logo-container i {
+  color: var(--color-primary);
+  font-size: 48px;
+}
+
+.company-name {
+  margin-left: 0.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.nav-header {
+  font-size: 16px;
+  font-weight: 400;
+  color: grey;
+  margin: 25px 0px;
+}
+
+.nav-item {
+  margin: 20px 0px;
+  font-size: 18px;
+}
+
+.nav-item:hover {
+  transform: translateX(10px);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.nav-item span{
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+.nav-ul i {
+  font-weight: 500;
+}
+
+/*.custom-radio {
+  display: none !important;
+}*/
+
+.layout-content {
+  width: calc(100vw - var(--sidebar-width));
+  padding: 0px 30px 20px 30px;
+  margin-left: var(--sidebar-width);
+  position: relative;
+}
